@@ -1,9 +1,9 @@
-FROM maven:3.9.3  AS build
+FROM 3.5.2-jdk-17  AS build
 WORKDIR /app
 COPY pom.xml .
 RUN mvn dependency:go-offline
 COPY src ./src
-RUN mvn package 
+RUN mvn clean package 
 
 FROM openjdk:17-jre
 WORKDIR /app
