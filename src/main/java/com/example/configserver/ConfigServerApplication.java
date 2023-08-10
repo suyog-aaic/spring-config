@@ -2,9 +2,8 @@ package com.example.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
 @EnableConfigServer
+@SpringBootApplication
 public class ConfigServerApplication {
 
 	public static void main(String[] args) {
@@ -12,5 +11,3 @@ public class ConfigServerApplication {
 	}
 
 }
-
-
