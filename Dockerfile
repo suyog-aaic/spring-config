@@ -1,4 +1,4 @@
-FROM 3.5.2-jdk-17  AS build
+FROM 3.8.3-openjdk-17  AS build
 WORKDIR /app
 COPY pom.xml .
 RUN mvn dependency:go-offline
