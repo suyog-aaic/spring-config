@@ -3,7 +3,7 @@ WORKDIR /app
 COPY pom.xml .
 RUN mvn dependency:go-offline
 COPY src ./src
-RUN mvn package -DskipTests
+RUN mvn package -Dmaven.test.skip=true -Dmaven.repo.local=.m2/repository
 
 FROM openjdk:17-jre
 WORKDIR /app
