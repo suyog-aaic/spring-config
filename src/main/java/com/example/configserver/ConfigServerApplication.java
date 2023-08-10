@@ -5,8 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableConfigServer
-public class ConfigServer {
-  public static void main(String[] args) {
-    SpringApplication.run(ConfigServer.class, args);
-  }
+public class ConfigServerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ConfigServerApplication.class, args);
+	}
+
 }
